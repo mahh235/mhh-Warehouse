@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>我是第1个页面</h1>
+    <a href="./2.html">跳转第二个页面</a>
+    <br>
+    <button id="b">后退</button>
+    <button id="f">前进</button>
+    <br>
+    <button id="go2">去第二个页面</button>
+    <button id="go3">去第三个页面</button>
+   
+
+    <script>
+        console.log(window.history.length);
+
+        b.onclick = function(){
+            window.history.back();
+        }
+
+        f.onclick = function(){
+            window.history.forward();
+        }
+
+        go2.onclick = function(){
+            window.history.go(1); 
+        }
+
+        go3.onclick = function(){
+            window.history.go(2); 
+        }
+
+
+    </script>
+</body>
+</html>
